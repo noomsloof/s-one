@@ -4,7 +4,7 @@ import logo from '../../assets/images/SOne_index_logo.png';
 const Footerbar = () => {
     return (
         <>
-            <footer className='fixed bottom-0 left-0 w-full text-white text-sm py-2 z-50'>
+            <footer className='bottom-0 left-0 w-full text-white text-sm py-2 z-50'>
                 <nav className="bg-white w-full z-50 items-center">
                     <div className="mx-auto py-3 flex">
                         <div className="w-32">

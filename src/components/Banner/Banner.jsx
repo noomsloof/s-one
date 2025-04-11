@@ -8,7 +8,7 @@ const Banner = () => {
     const [mainImage, setMainImage] = useState(images[0]);
 
     return (
-        <div className="relative w-full h-[450px]">
+        <div className="relative w-auto h-full">
             {/* ภาพพื้นหลัง */}
             <img
                 src={mainImage}
@@ -25,7 +25,7 @@ const Banner = () => {
                             src={img}
                             alt={`thumb-${index}`}
                             onClick={() => setMainImage(img)}
-                            className={`w-auto h-24 border cursor-pointer ring-1 ring-orange-500`}
+                            className={'hidden md:block w-full max-w-xs h-20 border cursor-pointer ring-1 ring-orange-500'}
                         />
                     ))}
                 </div>
