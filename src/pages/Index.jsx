@@ -14,21 +14,23 @@ export default function Index() {
       <Navbar />
       <div className="grid grid-cols-4 gap-4 w-full">
         <div className="col-span-4 md:col-span-1 h-full">
-            <SearchTires />
+          <SearchTires />
         </div>
         <div className="col-span-4 md:col-span-3 h-full">
-            <Banner />
+          <Banner />
         </div>
         <div className="col-span-4">
           <Servicebar />
         </div>
-        <div className="col-span-1">
-          <Station />
+        <div className="col-span-4 md:col-span-1">
+          <div className="col-span-4 md:col-span-3 h-full">
+            <Station />
+          </div>
         </div>
-        <div className="col-span-2">
+        <div className="col-span-4 md:col-span-2">
           <News />
         </div>
-        <div className="col-span-1">
+        <div className="col-span-4 md:col-span-1">
           <Subscribe />
         </div>
       </div>

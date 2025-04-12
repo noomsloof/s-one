@@ -6,9 +6,9 @@ const Subscribe = () => {
   return (
     <>
       <div className="flex flex-col">
-        <div className="w-[100%] h-auto relative">
+        <div className="w-[100%] h-auto flex flex-row justify-center">
           <img src={tips} alt="" />
-          <div className="absolute top-0 right-2 bg-[#252525] w-55 h-30 z-[-10] text-white">
+          <div className="bg-[#252525] h-30 text-white px-5">
             <div className="flex flex-col justify-center items-center text-center">
               <div className="text-orange-600 text-lg p-2">Safety Tips</div>
               <div className="text-sm p-2">
@@ -17,8 +17,8 @@ const Subscribe = () => {
             </div>
           </div>
         </div>
-        <div className="flex justify-center gap-4 border-b border-dashed border-orange-500 pb-2">
-          <div>สมัครรับข่าวสาร</div>
+        <div className="flex flex-wrap justify-center gap-4 border-b border-dashed border-orange-500 pb-2">
+        <div>สมัครรับข่าวสาร</div>
           <div className="flex justify-center">
             <input
               type="text"

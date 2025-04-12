@@ -1,28 +1,26 @@
 import { useState } from 'react';
 import banner1 from '../../assets/images/SOne_index_banner.jpg';
-import banner2 from '../../assets/images/SOne_index_banner.jpg';
-import banner3 from '../../assets/images/SOne_index_banner.jpg';
+import thum from '../../assets/images/SOne_index_pic02.jpg';
+import thumhv from '../../assets/images/SOne_index_pic01.jpg';
 
 const Banner = () => {
-    const images = [banner1, banner2, banner3];
+    const images = [thum, thum, thum];
     const [mainImage, setMainImage] = useState(images[0]);
 
     return (
         <div className="relative w-auto h-full">
-            {/* ภาพพื้นหลัง */}
             <img
-                src={mainImage}
+                src={banner1}
                 alt="main banner"
                 className="w-full h-full object-cover"
             />
 
-            {/* Thumbnail overlay ด้านขวาล่าง */}
             <div className="absolute top-1/2 right-4 transform -translate-y-1/2 p-2 rounded shadow-md">
                 <div className="flex flex-col gap-2">
                     {images.map((img, index) => (
                         <img
                             key={index}
-                            src={img}
+                            src={img} onMouseOver={(e) => (e.currentTarget.src = thumhv)} onMouseOut={(e) => (e.currentTarget.src = thum)}
                             alt={`thumb-${index}`}
                             onClick={() => setMainImage(img)}
                             className={'hidden md:block w-full max-w-xs h-20 border cursor-pointer ring-1 ring-orange-500'}
